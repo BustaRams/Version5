@@ -99,8 +99,8 @@ Rails.application.configure do
           s3_region: ENV['AWS_REGION']
       },
 
-      :s3_host_name => "s3-#{ENV['AWS_REGION']}.amazonaws.com",
-      :url => ":s3_#{ENV['S3_BUCKET_NAME']}"
+      :s3_host_name => "s3-#{ENV['AWS_REGION']}.amazonaws.com"
+      # :url => ":s3_#{ENV['S3_BUCKET_NAME']}"
 
   }
 
