@@ -117,7 +117,7 @@ Rails.application.configure do
       enable_starttls_auto: true
   }
 
-= begin
+
   storage: :s3,
       s3_credentials: {
       bucket: ENV.fetch('S3_BUCKET_NAME'),
@@ -125,5 +125,5 @@ Rails.application.configure do
       secret_access_key: ENV.fetch('AWS_SECRET_ACCESS_KEY'),
       s3_region: ENV.fetch('AWS_REGION')
   }
-= end
+
 end
